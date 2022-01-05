@@ -1,0 +1,38 @@
+## Docker commands used to build the application 
+sudo docker build -t techtrends .
+
+## Docker commands used to run the application
+sudo docker run -d -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+sudo docker logs 51376086fdd6
+
+## Logs from the container running the TechTrends application
+* Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug: 2021-08-26 17:15:21,205,  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug: 2021-08-26 17:15:47,446, 172.17.0.1 - - [26/Aug/2021 17:15:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: 2021-08-26 17:15:47,520, 172.17.0.1 - - [26/Aug/2021 17:15:47] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug: 2021-08-26 17:15:47,535, 172.17.0.1 - - [26/Aug/2021 17:15:47] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: 2021-08-26 17:15:54,507, 172.17.0.1 - - [26/Aug/2021 17:15:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: 2021-08-26 17:16:02,419, 172.17.0.1 - - [26/Aug/2021 17:16:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: 2021-08-26 17:16:02,514, 172.17.0.1 - - [26/Aug/2021 17:16:02] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug: 2021-08-26 17:16:02,527, 172.17.0.1 - - [26/Aug/2021 17:16:02] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: 2021-08-26 17:16:08,055, 172.17.0.1 - - [26/Aug/2021 17:16:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: 2021-08-26 17:26:22,278, 172.17.0.1 - - [26/Aug/2021 17:26:22] "GET /create HTTP/1.1" 200 -
+INFO:app: 2021-08-26 17:26:38,449, New Article "fadwa fuad" created!.
+INFO:werkzeug: 2021-08-26 17:26:38,450, 172.17.0.1 - - [26/Aug/2021 17:26:38] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug: 2021-08-26 17:26:38,460, 172.17.0.1 - - [26/Aug/2021 17:26:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: 2021-08-26 17:26:48,038, 172.17.0.1 - - [26/Aug/2021 17:26:48] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug: 2021-08-26 17:26:54,759, 172.17.0.1 - - [26/Aug/2021 17:26:54] "GET /healthz HTTP/1.1" 200 -
+INFO:app: 2021-08-26 17:27:00,370, "404 page" retrieved!
+INFO:werkzeug: 2021-08-26 17:27:00,404, 172.17.0.1 - - [26/Aug/2021 17:27:00] "GET /555 HTTP/1.1" 404 -
+INFO:app: 2021-08-26 17:27:07,075, The "About Us" page is retrieved.
+INFO:werkzeug: 2021-08-26 17:27:07,108, 172.17.0.1 - - [26/Aug/2021 17:27:07] "GET /about HTTP/1.1" 200 -
+INFO:app: 2021-08-26 17:27:29,401, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug: 2021-08-26 17:27:29,426, 172.17.0.1 - - [26/Aug/2021 17:27:29] "GET /1 HTTP/1.1" 200 -
+
+
